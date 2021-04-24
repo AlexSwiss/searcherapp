@@ -1,3 +1,6 @@
+// Example to Pick and Upload files in React Native
+// https://aboutreact.com/file-uploading-in-react-native/
+
 // Import React
 import React, { useState } from 'react';
 // Import core components
@@ -23,29 +26,21 @@ const Upload = () => {
       data.append('name', 'Image Upload');
       data.append('file_attachment', fileToUpload);
       // Please change file upload URL
-      let res = await fetch('https://10.0.3.2:8080/api/v1/upload', {
+      let res = await fetch(
+        'http://10.0.3.2:8080/api/v1/upload',
+        {
           method: 'POST',
           body: data,
           headers: {
-            'Content-Type': 'multipart/form-data; ',
+            'Accept': 'multipart/form-data',
+            'Content-Type': 'multipart/form-data'
           },
         }
-      )
-      .then((response) => response.json())
-      .then((responseJson) => {
-        //Hide Loader
-        console.log(responseJson);
-        // If server response message same as Data Matched
-        if (responseJson.status == 1) {
-          alert('Upload Successful');
-        } else {
-          console.log("error");
-        }
-      })
-      .catch((error) => {
-        //Hide Loader
-        console.error(error);
-      });
+      );
+      let responseJson = await res.json();
+      if (responseJson.status == 1) {
+        alert('Upload Successful');
+      }
     } else {
       // If no file selected the show alert
       alert('Please Select File first');
@@ -84,12 +79,17 @@ const Upload = () => {
   };
   return (
     <View style={styles.mainBody}>
+
       {/*Showing the data of selected Single file*/}
       {singleFile != null ? (
         <Text style={styles.textStyle}>
           File Name: {singleFile.name ? singleFile.name : ''}
           {'\n'}
+          Type: {singleFile.type ? singleFile.type : ''}
+          {'\n'}
           File Size: {singleFile.size ? singleFile.size : ''}
+          {'\n'}
+          URI: {singleFile.uri ? singleFile.uri : ''}
           {'\n'}
         </Text>
       ) : null}

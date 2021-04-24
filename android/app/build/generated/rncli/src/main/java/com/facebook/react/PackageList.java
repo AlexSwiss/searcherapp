@@ -31,6 +31,8 @@ import com.facebook.reactnative.androidsdk.FBSDKPackage;
 import com.swmansion.gesturehandler.react.RNGestureHandlerPackage;
 // react-native-google-signin
 import co.apptailor.googlesignin.RNGoogleSigninPackage;
+// react-native-image-picker
+import com.imagepicker.ImagePickerPackage;
 // react-native-reanimated
 import com.swmansion.reanimated.ReanimatedPackage;
 // react-native-safe-area-context
@@ -94,6 +96,7 @@ public class PackageList {
       new FBSDKPackage(),
       new RNGestureHandlerPackage(),
       new RNGoogleSigninPackage(),
+      new ImagePickerPackage(),
       new ReanimatedPackage(),
       new SafeAreaContextPackage(),
       new RNScreensPackage(),

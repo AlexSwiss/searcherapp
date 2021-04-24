@@ -2060,6 +2060,10 @@
         "source": "/root/.gradle/caches/transforms-2/files-2.1/008f243bf6dd08f82e37115d7cd7d56c/appcompat-1.1.0/res/drawable-hdpi-v4/abc_list_longpressed_holo.9.png"
     },
     {
+        "merged": "/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/build/intermediates/res/merged/debug/layout_list_item.xml.flat",
+        "source": "/home/codedfingers/mobile-dev/react-native-starter-kit/node_modules/react-native-image-picker/android/build/intermediates/packaged_res/debug/layout/list_item.xml"
+    },
+    {
         "merged": "/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_btn_radio_to_on_mtrl_000.png.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/008f243bf6dd08f82e37115d7cd7d56c/appcompat-1.1.0/res/drawable-mdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
@@ -2538,6 +2542,10 @@
     {
         "merged": "/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/build/intermediates/res/merged/debug/color_abc_tint_spinner.xml.flat",
         "source": "/root/.gradle/caches/transforms-2/files-2.1/008f243bf6dd08f82e37115d7cd7d56c/appcompat-1.1.0/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/build/intermediates/res/merged/debug/xml_provider_paths.xml.flat",
+        "source": "/home/codedfingers/mobile-dev/react-native-starter-kit/node_modules/react-native-image-picker/android/build/intermediates/packaged_res/debug/xml/provider_paths.xml"
     },
     {
         "merged": "/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/build/intermediates/res/merged/debug/drawable-mdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
