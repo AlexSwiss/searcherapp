@@ -14,8 +14,9 @@ import {
 // Import Document Picker
 import DocumentPicker from 'react-native-document-picker';
 
-const Upload = () => {
+const Upload = ({props}) => {
   const [singleFile, setSingleFile] = useState(null);
+  const [url, setImageUrl] = useState('');
 
   const uploadImage = async () => {
     // Check if any file is selected or not
@@ -26,9 +27,7 @@ const Upload = () => {
       data.append('name', 'Image Upload');
       data.append('file_attachment', fileToUpload);
       // Please change file upload URL
-      let res = await fetch(
-        'http://10.0.3.2:8080/api/v1/upload',
-        {
+      fetch('http://10.0.3.2:8080/api/v1/upload',{
           method: 'POST',
           body: data,
           headers: {
@@ -36,16 +35,29 @@ const Upload = () => {
             'Content-Type': 'multipart/form-data'
           },
         }
-      );
-      let responseJson = await res.json();
-      if (responseJson.status == 1) {
-        alert('Upload Successful');
-      }
-    } else {
-      // If no file selected the show alert
-      alert('Please Select File first');
-    }
-  };
+      )
+      .then((response) => response.json())
+      .then((responseJson) => {
+        //Hide Loader
+        //setLoading(false);
+        //console.log(responseJson);
+        setImageUrl(responseJson)
+        //console.log(url.response.secure_url)
+        props(url.response.secure_url)
+        // If server response message same as Data Matched
+        if (responseJson.status === 200) {
+          //setIsPostSuccess(true);
+          console.log('Image upload Successful.');
+        } else {
+          console.log('Image upload failed.');
+        }
+      })
+      .catch((error) => {
+        //Hide Loader
+        //setLoading(false);
+        console.error(error);
+      });
+  }};
 
   const selectFile = async () => {
     // Opening Document Picker to select one file
@@ -86,11 +98,6 @@ const Upload = () => {
           File Name: {singleFile.name ? singleFile.name : ''}
           {'\n'}
           Type: {singleFile.type ? singleFile.type : ''}
-          {'\n'}
-          File Size: {singleFile.size ? singleFile.size : ''}
-          {'\n'}
-          URI: {singleFile.uri ? singleFile.uri : ''}
-          {'\n'}
         </Text>
       ) : null}
       <TouchableOpacity

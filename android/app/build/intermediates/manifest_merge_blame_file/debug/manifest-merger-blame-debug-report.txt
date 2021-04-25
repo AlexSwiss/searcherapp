@@ -34,66 +34,66 @@
 18-->[com.android.installreferrer:installreferrer:1.0] /root/.gradle/caches/transforms-2/files-2.1/360990af091a6742979f4073b0256aba/jetified-installreferrer-1.0/AndroidManifest.xml:9:22-107
 19
 20    <application
-20-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:6:5-29:19
+20-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:6:5-30:19
 21        android:name="com.companyname.searcher.MainApplication"
-21-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:7:7-38
+21-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:8:7-38
 22        android:allowBackup="false"
-22-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:11:7-34
+22-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:12:7-34
 23        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 23-->[androidx.core:core:1.1.0] /root/.gradle/caches/transforms-2/files-2.1/5644a94d9f003a0b90383b8c36ca5e5e/core-1.1.0/AndroidManifest.xml:24:18-86
 24        android:debuggable="true"
 25        android:icon="@mipmap/ic_launcher"
-25-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:9:7-41
+25-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:10:7-41
 26        android:label="@string/app_name"
-26-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:8:7-39
+26-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:9:7-39
 27        android:roundIcon="@mipmap/ic_launcher_round"
-27-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:10:7-52
+27-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:11:7-52
 28        android:supportsRtl="true"
 28-->[com.facebook.android:facebook-android-sdk:5.15.3] /root/.gradle/caches/transforms-2/files-2.1/ff676da7300bfa4d855396050baa1463/facebook-android-sdk-5.15.3/AndroidManifest.xml:28:18-44
 29        android:theme="@style/AppTheme"
-29-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:12:7-38
+29-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:13:7-38
 30        android:usesCleartextTraffic="true" >
-30-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/debug/AndroidManifest.xml:9:18-53
+30-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:7:7-42
 31        <meta-data
-31-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:13:7-15:68
+31-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:14:7-16:68
 32            android:name="com.google.android.geo.API_KEY"
-32-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:14:11-56
+32-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:15:11-56
 33            android:value="AIzaSyDOJM4bdpX3wXWQyx1m5mkQCFohWn1S7pI" />
-33-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:15:11-66
+33-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:16:11-66
 34
 35        <activity
-35-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:16:7-26:18
+35-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:17:7-27:18
 36            android:name="com.companyname.searcher.MainActivity"
-36-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:17:9-37
+36-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:18:9-37
 37            android:configChanges="keyboard|keyboardHidden|orientation|screenSize|uiMode"
-37-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:19:9-86
+37-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:20:9-86
 38            android:label="@string/app_name"
-38-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:18:9-41
+38-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:19:9-41
 39            android:launchMode="singleTask"
-39-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:20:9-40
+39-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:21:9-40
 40            android:windowSoftInputMode="adjustResize" >
-40-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:21:9-51
+40-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:22:9-51
 41            <intent-filter>
-41-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:22:9-25:25
+41-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:23:9-26:25
 42                <action android:name="android.intent.action.MAIN" />
-42-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:23:13-65
-42-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:23:21-62
+42-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:24:13-65
+42-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:24:21-62
 43
 44                <category android:name="android.intent.category.LAUNCHER" />
-44-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:24:13-73
-44-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:24:23-70
+44-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:25:13-73
+44-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:25:23-70
 45            </intent-filter>
 46        </activity>
 47        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
-47-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:27:7-84
-47-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:27:17-81
+47-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:28:7-84
+47-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:28:17-81
 48
 49        <meta-data
-49-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:28:7-105
+49-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:29:7-105
 50            android:name="com.facebook.sdk.ApplicationId"
-50-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:28:18-63
+50-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:29:18-63
 51            android:value="@string/facebook_app_id" />
-51-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:28:64-103
+51-->/home/codedfingers/mobile-dev/react-native-starter-kit/android/app/src/main/AndroidManifest.xml:29:64-103
 52
 53        <activity
 53-->[com.google.firebase:firebase-auth:20.0.3] /root/.gradle/caches/transforms-2/files-2.1/05283713a2f1993791161e7e83ac35c2/jetified-firebase-auth-20.0.3/AndroidManifest.xml:27:9-44:20

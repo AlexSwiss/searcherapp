@@ -42,7 +42,7 @@ const HomeScreen = ({navigation}) => {
                 <Content>
                   <Card style={styles.card}>
                   <CardItem cardBody style={styles.cardItem}>
-                      <Image source={require('../../Image/swiss.jpg')} style={styles.image}/>
+                      <Image source={{uri: item.url}} style={styles.image}/>
                         <Text style={styles.textTitle}
                           onPress={() => {
                             navigation.navigate('ItemScreen', {id: item.id})

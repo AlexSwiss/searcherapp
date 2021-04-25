@@ -14,8 +14,8 @@ import {
   TouchableOpacity,
   ScrollView,
 } from 'react-native';
-import UploadImage from '../Components/UploadImage';
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import UploadImage from '../Components/UploadImage';
 
 import Loader from '../Components/Loader';
 
@@ -27,6 +27,7 @@ const AddScreen = (props) => {
   const [location, setLocation] = useState('');
   const [color, setColor] = useState('');
   const [name, setName] = useState('');
+  const [url, setImageUrl] = useState();
   const [loading, setLoading] = useState(false);
   const [errortext, setErrortext] = useState('');
   const [
@@ -42,9 +43,13 @@ const AddScreen = (props) => {
   const colorInputRef = createRef();
   const nameInputRef = createRef();
 
+  const getUrl = (url) => {
+    setImageUrl(url)
+  }
 
   const handleSubmitButton = async () => {
 
+  
     var token = await AsyncStorage.getItem('token')
     console.log(token)
 
@@ -86,8 +91,10 @@ const AddScreen = (props) => {
       age: age,
       location: location,
       color: color,
-      name: name
+      name: name,
+      url: url,
     };
+    //console.log("url:"+ dataToSend.url);
     //var formBody = [];
     // for (var key in dataToSend) {
     //   var encodedKey = encodeURIComponent(key);
@@ -293,7 +300,7 @@ const AddScreen = (props) => {
               blurOnSubmit={false}
             />
           </View>
-        <UploadImage />
+        <UploadImage props={getUrl}/>
 
           <TouchableOpacity
             style={styles.buttonStyle}
